@@ -579,13 +579,19 @@ public class WarehouseBook {
                     list.remove(i);
                 }
             }
-            res += list.get(i);
-            if(i + 1 < list.size()){
-                res += " ";
-            }else {
-                res += ")";
-            }
         }
+
+        for(int i = 0; i < list.size(); i++){
+            res += list.get(i);
+            if((i+1) < list.size() && (list.get(i).equals("(") || list.get(i+1).equals(")")))
+                continue;
+
+            if(i + 1 == list.size())
+                break;
+
+            res += " ";
+        }
+        res += ")";
 
         return res;
     }
