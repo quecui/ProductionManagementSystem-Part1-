@@ -417,20 +417,6 @@ public class WarehouseBook {
         return result;
     }
 
-//    public void helper(WarehouseNode node, List<String> result ){///???????????????
-//        if(node.left!=null)
-//            helper(node.left, result);
-//
-//        String tmp = String.valueOf(node.getRecord().getQuantity());
-//        if(tmp.length() < 2)
-//            tmp = "0" + tmp;
-//
-//        result.add(String.valueOf(node.getRecord().getProductID()) + tmp);
-//
-//        if(node.right!=null)
-//            helper(node.right, result);
-//    }
-
     public void descProduct(String node){
         int productID = Integer.parseInt(node.substring(0, 3));
         int quantity = Integer.parseInt(node.substring(3));
