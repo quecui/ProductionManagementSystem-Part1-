@@ -1,4 +1,5 @@
 package pms;
+//package vn.edu.tdt.it.dsa;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -572,7 +573,7 @@ public class WarehouseBook {
         List<String> list = new ArrayList<String>();
         list = getAllNodes(root, list);
 
-        res += "(";
+        res += "";
         for(int i = 0; i < list.size(); i++){
             if(list.get(i).equals("(") && list.get(i+1).equals("N") && list.get(i+2).equals("N")){
                 for(int j = 0; j < 4; j ++){
@@ -591,7 +592,7 @@ public class WarehouseBook {
 
             res += " ";
         }
-        res += ")";
+        res += "";
 
         return res;
     }
