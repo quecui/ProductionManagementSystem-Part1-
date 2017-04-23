@@ -251,9 +251,6 @@ public class DeliveringMap {
 
     public int processFromTwoToFourLevel(int level, boolean rushHour, String order) {
         int res = 0;
-//        if(rushHour)
-//            order = "MAX";
-//        else
         order = "MIN";
 
         res = street.distanceList.get(getIndex(street.distanceList, order, true, true)).distance;
@@ -315,8 +312,6 @@ public class DeliveringMap {
             int checkPoint = 0;
 
             //Level 9
-
-
             for (int i = 0; i < list.size(); i++) {
               //  System.out.print(list.get(i) + " ");
                 if (i + 1 == list.size())

@@ -5,8 +5,6 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-
-
 public class WarehouseBook {
 
     protected static class WarehouseNode {
@@ -79,6 +77,7 @@ public class WarehouseBook {
                 i = i + 5;
             }
         }
+        System.out.println();
     }
 
 
@@ -325,6 +324,7 @@ public class WarehouseBook {
 
         return result;
     }
+
     private int height(WarehouseNode node) {
         return node == null ? -1 : node.balance;
     }
